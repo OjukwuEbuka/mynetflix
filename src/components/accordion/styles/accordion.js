@@ -9,17 +9,29 @@ export const Inner = styled.div`
     display: flex;
     padding: 70px 45px;
     flex-direction: column;
+    align-items: center;
+    align
     max-width: 815px;
     margin: auto;
+`;
+
+export const Box = styled.div`
+    display: flex;
+    justify-content: center;
 `;
 
 export const Item = styled.div`
     color: white;
     margin-bottom: 10px;
+    width: 670px;
     max-width: 670px;
 
     &:first-of-type {
         margin-top: 3em;
+    }
+
+    @media(max-width: 1000px){
+        width: 400px;
     }
 `;
 

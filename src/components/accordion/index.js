@@ -5,7 +5,8 @@ import {
     Item,
     Inner,
     Header,
-    Body
+    Body,
+    Box
 } from './styles/accordion';
 
 const ToggleContext = createContext();
@@ -16,6 +17,10 @@ export default function Accordion({ children, ...restProps}) {
             <Inner>{children}</Inner>
         </Container>
     )
+}
+
+Accordion.Box = function AccordionBox({ children, ...restProps}) {
+    return <Box {...restProps}>{children}</Box>
 }
 
 Accordion.Title = function AccordionTitle({children, ...restProps}){
